@@ -298,7 +298,7 @@ div:has(> .snw-reference),
   position: absolute;
   right: 0;
   top: 15px;
-  width: 90px;
+  width: 180px;
   padding: 5px;
   z-index: 1;
   border: 3px solid var(--divider-color);

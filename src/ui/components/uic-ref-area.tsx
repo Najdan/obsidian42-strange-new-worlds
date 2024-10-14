@@ -69,6 +69,10 @@ const sortLinks = (links: Link[], option: SortOption): Link[] => {
         return fileA!.stat.mtime - fileB!.stat.mtime;
       case 'mtime-desc':
         return fileB!.stat.mtime - fileA!.stat.mtime;
+      case 'ctime-asc':
+        return fileA!.stat.ctime - fileB!.stat.ctime;
+      case 'ctime-desc':
+        return fileB!.stat.ctime - fileA!.stat.ctime;
       default:
         return 0;
     }
